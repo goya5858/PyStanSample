@@ -8,4 +8,5 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./working/:/home/working/
+      - ./:/home/working/
+    working_dir: /home/working/
