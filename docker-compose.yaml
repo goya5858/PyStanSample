@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pymc3:
+    container_name: pystan
+    build: .
+    tty: true
+    ports:
+      - 8888:8888
+    volumes:
+      - ./working/:/home/working/
